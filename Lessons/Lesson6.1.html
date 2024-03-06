@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Optional Lab 6-2</title>
+        <script>
+            function vote() {
+                var t = "Your favorite sauce is: ";
+                for (i = 0; i < document.myform.sauce.length; i++) {
+                    if (document.myform.sauce[i].checked == true) {
+                        t = t + document.myform.sauce[i].value;
+                    }
+                }
+                if (t == "Your favorite sauce is: ") {
+                    document.getElementById("txt").value = "Choose a sauce";
+                } else {
+                    document.getElementById("txt").value = t;
+                    document.getElementById("txt1").value = t;
+                    document.getElementById("txt2").value = t;
+                }
+            }
+            function upperCase() {
+                var x = document.getElementById("txt").value;
+                document.getElementById("txt").value = x.toUpperCase();
+            }
+            function SayHello() {
+                alert("Your mouse is over the text!");
+            }
+            function SayGoodbye() {
+                alert("Your mouse has left the text!");
+            }
+        </script>
+    </head>
+    <body>
+        <h3>CIW Advanced HTML5 and CSS3 Specialist</h3>
+        <hr/>
+        <h4>Event Handler Examples</h4>
+        Vote for your favorite Sauce:
+        <form name="myform">
+            <input type="radio" name="sauce" value="Ketchup" />Ketchup<br/>
+            <input type="radio" name="sauce" value="Mustard" />Mustard<br/>
+            <input type="radio" name="sauce" value="Mayonaise" />Mayonaise<br/>
+            <input type="radio" name="sauce" value="Hotsauce" />Hotsauce<br/>
+            <input type="radio" name="sauce" value="Soy" />Soy Sauce<br/>
+            <input type="radio" name="sauce" value="Barbecue" />Barbecue<br/>
+            <input type="radio" name="sauce" value="Sweet And Sour" />Sweet and Sour<br/>
+            <input type="radio" name="sauce" value="None" />I'm not really a sauce person...<br/>
+            <p><input type="button" value="VOTE" onclick="vote()" /> <input type="reset" value="RESET" /></p>
+            <p><input type="text" id="txt" size="40" onblur="upperCase()" /> Click in then out!</p>
+            <p><input type="text" id="txt1" size="40" onmouseover="SayHello()" /> Hover over this field!</p>
+            <p><input type="text" id="txt2" size="40" onmouseout="SayGoodbye()" /> Hover this field then away!</p>
+        </form>
+    </body>
+</html>
