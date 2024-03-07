@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Long Ladybug</title>
+    </head>
+   <body> 
+<script>
+var bodyX = 205;
+var bodyY = 220;
+var bodyW = 120;
+var faceW = bodyW/2;
 
+draw = function() {
+    fill(255, 0, 0);
+ellipse(200,200,150,112);//body
+fill(43, 40, 43);
+ellipse(bodyY+80,200,55,65);//head
+//spots
+ellipse(150,170,20,20);//top left
+ellipse(150,200,20,20);//middle left
+ellipse(150,230,20,20);//bottom left
+ellipse(235,170,20,20);//top right
+ellipse(195,200,20,20);//middle
+ellipse(235,230,20,20);//bottom right
+//antennas
+line(320,200,340,220);//bottom
+line(320,200,340,160);//top
+//legs
+line(150,220,125,250);//bottom left
+line(150,180,140,150);//top left
+line(250,179,277,150);//top right
+line(250,220,300,250);//bottom right
+bodyY+=2;
+};
+</script>
+    </body>
+</html>
