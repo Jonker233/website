@@ -12,33 +12,7 @@
         <li><a href="KhanAcademyWork/index.html">Khan Academy Work</a></li>
         <li><a href="Lessons/Lesson6.1.html">Lesson 6.1</a></li>
         <li><a href="HeadFirstLounge/index.html">Min</a></li>
+        <li><a href="website/Notes/index.html">99 Bottles Song</a></li>
         <button onclick="myFunction()">Press me if you like Burgers</button>
-        <main id="song"></main>
-        <script>
-            function myFunction() {
-  alert("Me too!");
-}
-            var drink = "Arnold Palmer";
-            var lyrics = "";
-            var cans = 99;
-            while (cans > 0) {
-                lyrics = lyrics + cans + " cans of " 
-                        + drink + " on the wall <br>";
-                lyrics = lyrics + cans + " cans of " 
-                        + drink + "<br>";
-                lyrics = lyrics + "Take one down, pass it around,<br>";
-                if (cans > 1) {
-                    lyrics = lyrics + (cans-1) + " cans of " 
-                        + drink + " on the wall <br>";
-                }
-                else {
-                    lyrics = lyrics +  "No more cans of " 
-                        + drink + " on the wall <br>";
-                }
-                cans = cans - 1;
-            }
-            document.getElementById("song").innerHTML = lyrics;
-        
-        </script>
     </body>
 </html>
