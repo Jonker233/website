@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Refresh the page to play the Animation Again</h1>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+ 
+<script>
+function setup() {
+    createCanvas(400, 400);
+}
+
+var xPos = 1;
+var yPos = 1;
+var XPOS = 400;
+var YPOS = 400;
+var YPos =1;
+var XPos = 400;
+var YPOs = 400;
+var XPOs = 1;
+
+
+draw = function() {
+    background(29, 40, 115);
+    fill(191, 180, 180);
+    ellipse(73,4,6,8);
+    ellipse(365,4,6,8);
+    ellipse(388,153,6,8);
+    ellipse(14,105,6,8);
+    ellipse(48,255,6,8);
+    ellipse(302,381,6,8);
+    noStroke();
+    stroke(5, 5, 5);
+    arc(200,10,100,100,10,90);
+    fill(120, 115, 115);
+    stroke(0, 0, 0);
+    ellipse(220,10,10,10);
+    ellipse(235,36,10,10);
+    ellipse(211,36,10,10);
+    fill(255, 242, 0);
+    ellipse(xPos, yPos, 20, 20);//top left
+    xPos+=3;
+    yPos+=3;
+    ellipse(XPOS,YPOS,20,20);//bottom right
+    XPOS-=3;
+    YPOS-=3;
+    ellipse(YPos,XPos,20,20);//top right
+    YPos+=3;
+    XPos-=3;
+    ellipse(YPOs,XPOs,20,20);//bottom left
+    YPOs-=3;
+    XPOs+=3;
+    
+};
+
+
+
+
+</script>
+ 
+</body>
+</html>
 
